@@ -5,5 +5,7 @@ export class HelloLambdaStack extends cdk.Stack {
     super(scope, id, props);
 
     // The code that defines your stack goes here
+
+   
   }
 }
