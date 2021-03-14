@@ -13,10 +13,8 @@ export class HelloLambdaStack extends cdk.Stack {
       code: lambda.Code.fromAsset('lambda'),
       handler:'hello.handler'
     })
-
-    new apigw.LambdaRestApi(this ,'Endpoint' , {
-      handler: hello
-    })
-   
+    new apigw.LambdaRestApi(this, "Endpoint", {
+      handler: hello,
+    });
   }
 }
